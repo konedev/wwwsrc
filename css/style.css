@@ -1,0 +1,98 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.step-box {
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    margin: 2% auto;
+    overflow: hidden;
+    background: #F2F1EF;
+}
+
+.step-box div {
+    position: relative;
+    float: left;
+    width: 45%;
+    padding: 2.5%;
+}
+
+.step-box .step-description-container { left: 0%; text-align: center;}
+/*.step-box .step-img { left: 0%; }*/
+
+.step-box .step-description-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+
+}
+
+.step-box:before,
+.step-box:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 49%;
+    background: #F2F1EF;
+}
+
+.step-box:after {
+    left: 49%;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.step-description {
+    display: inline-block;
+    vertical-align: middle;
+    width: 85% !important;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top: -7.5%;
+    border: #ecf0f1 solid 1px;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+.step-number{
+
+    display: block;
+
+    width:100px;
+    height:125px;
+    /*margin: -5%;*/
+
+    text-align: center;
+    line-height: 125px;
+
+    background:#0071B9;
+    color: white;
+
+    font-size: 5em;
+}
+
+.step-description-container h1{
+    color: #4e5769;
+}
+
+.step-description-container p{
+    color:#6C7A89;
+}
+
+
+/*KONE BLUE*/
+/*#0071B9*/
